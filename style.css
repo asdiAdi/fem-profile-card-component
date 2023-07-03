@@ -65,8 +65,7 @@ body {
 
 .card__avatar {
   max-width: 6rem;
-  box-sizing: content-box;
-  border: 0.3125rem solid white;
+  outline: 0.3125rem solid white;
   border-radius: 50%;
   top: 5.75rem;
 }
