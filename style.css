@@ -1,11 +1,9 @@
 :root {
-  /*colors*/
-  --pure-white: #ffffff;
-  --cream: #f2eae2;
-  --aurometal-saurus: #6c7289;
-  --deep-aquamarine: #3d8168;
-  --deep-aquamarine-hover: #1a4032;
-  --gunmetal: #1c232b;
+  /* colors */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
 
   /*fonts*/
   --font-overline: 500 0.75rem Montserrat, sans-serif;
@@ -26,11 +24,122 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cream);
+  background-color: var(--dark-cyan);
+  overflow: hidden;
+}
+
+.bg {
+  width: 38.875rem;
+  display: block;
+  position: fixed;
+  z-index: -1;
+}
+.bg--top {
+  bottom: 25rem;
+  right: 10.25rem;
+}
+.bg--bottom {
+  top: 22.5rem;
+  left: 10.25rem;
+}
+
+.card {
+  width: 20.375rem;
+  height: 23.375rem;
+  background-color: white;
+  border-radius: 0.9375rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__hero {
+  width: 100%;
+  display: block;
+  height: 8.75rem;
+}
+
+.card__center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card__avatar {
+  max-width: 6rem;
+  border: 0.3125rem solid white;
+  border-radius: 50%;
+  top: 5.75rem;
+}
+
+.card__user {
+  width: 8.4378rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 13.25rem;
+}
+
+.card__name,
+.item__label {
+  color: var(--very-dark-desaturated-blue);
+  font: 700 1.125rem "Kumbh Sans", sans-serif;
+}
+
+.card__age {
+  color: var(--dark-grayish-blue);
+  font: 400 1.125rem "Kumbh Sans", sans-serif;
+}
+
+.card__country {
+  color: var(--dark-grayish-blue);
+  font: 400 0.875rem "Kumbh Sans", sans-serif;
+  top: 15.1875rem;
+}
+
+.card__divider {
+  color: green;
+  width: 100%;
+  position: absolute;
+  bottom: 5.5rem;
+  border-bottom: none;
+  border-color: hsl(225, 10%, 92%);
+}
+
+.card__list {
+  width: 15.625rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  bottom: 1.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__text {
+  color: var(--dark-grayish-blue);
+  font: 400 0.625rem "Kumbh Sans", sans-serif;
+  letter-spacing: 0.094rem;
 }
 
 @media only screen and (min-width: 1440px) {
+  .bg {
+    width: 61rem;
+  }
+  .bg--top {
+    bottom: 15.75rem;
+    right: 46.625rem;
+  }
+  .bg--bottom {
+    top: 23.5rem;
+    left: 43.25rem;
+  }
   .card {
-    width: 0;
+    width: 21.875rem;
   }
 }

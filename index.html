@@ -6,12 +6,61 @@
     <title>title</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <!--    insert fonts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Kumbh Sans 400 700 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <div class="card"></div>
+      <img src="images/bg-pattern-top.svg" alt="bg-top" class="bg bg--top" />
+      <img
+        src="images/bg-pattern-bottom.svg"
+        alt="bg-bottom"
+        class="bg bg--bottom"
+      />
+
+      <div class="card">
+        <img
+          src="images/bg-pattern-card.svg"
+          alt="hero-img"
+          class="card__hero"
+        />
+
+        <img
+          src="images/image-victor.jpg"
+          alt="user-avatar"
+          class="card__avatar card__center"
+        />
+
+        <div class="card__user card__center">
+          <h1 class="card__name">Victor Crest</h1>
+          <span class="card__age">26</span>
+        </div>
+
+        <div class="card__country card__center">London</div>
+
+        <hr class="card__divider" />
+
+        <ul class="card__list card__center">
+          <li class="card__list__item item">
+            <span class="item__label">80K</span>
+            <span class="item__text">Followers</span>
+          </li>
+          <li class="card__list__item item">
+            <span class="item__label">803K</span>
+            <span class="item__text">Likes</span>
+          </li>
+          <li class="card__list__item item">
+            <span class="item__label">1.4K</span>
+            <span class="item__text">Photos</span>
+          </li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>

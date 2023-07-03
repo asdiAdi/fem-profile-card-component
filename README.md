@@ -1,4 +1,4 @@
-T
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
 
 ### Screenshots
 
@@ -12,8 +12,8 @@ T
 
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [Vercel]()
+- Solution URL: [GitHub](https://github.com/asdiAdi/fem-profile-card-component)
+- Live Site URL: [Vercel](https://fem-profile-card-component-coral.vercel.app/)
 
 ### Built with
 
