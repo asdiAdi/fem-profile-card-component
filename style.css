@@ -25,7 +25,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--dark-cyan);
-  overflow: hidden;
 }
 
 .bg {
@@ -66,6 +65,7 @@ body {
 
 .card__avatar {
   max-width: 6rem;
+  box-sizing: content-box;
   border: 0.3125rem solid white;
   border-radius: 50%;
   top: 5.75rem;
@@ -97,11 +97,10 @@ body {
 }
 
 .card__divider {
-  color: green;
   width: 100%;
   position: absolute;
   bottom: 5.5rem;
-  border-bottom: none;
+  border-top: none;
   border-color: hsl(225, 10%, 92%);
 }
 
